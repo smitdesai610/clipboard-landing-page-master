@@ -1,0 +1,244 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+picture,
+svg,
+video {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-size: 100%;
+    font-size: 18px;
+    font-family: Bai Jamjuree;
+}
+
+.background-image {
+    background-image: url('./images/bg-header-desktop.png');
+    /* background-size: cover;  */
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.history{
+    width: 50%; 
+}
+
+.snippets{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.computer-feature{
+    width: 50%;
+    max-width: 30%;
+}
+
+.access-clipboard{
+    width: 55%;
+    margin-bottom: 50px;
+}
+
+.Supercharge{
+    width: 60%;
+}
+
+.workflow{
+    width: 90%;
+}
+
+.workflow-icon{
+    width: 40px;
+    height: 40px;
+    margin-inline: auto;
+}
+
+.company-logos{
+    width: 90%;
+}
+
+.clipboard{
+    width: 55%;
+}
+
+.footer{
+    background-color: rgb(214, 214, 214);
+}
+
+h1, h4{
+    font-weight: 600;
+}
+
+.computer-image{
+    transform: translateX(-30px);
+}
+
+.foot-content h6 a {
+    text-decoration: none;
+    color: black; /* Initial color */
+    transition: color 0.3s ease;
+}
+
+.foot-content h6 a:hover,
+.foot-content h6 a:focus {
+    color: hsl(171, 66%, 44%); /* Change to desired hover color */
+}
+
+
+.ios-button{
+    background-color: hsl(171, 66%, 44%);
+}
+
+.mac-button{
+    background-color: hsl(233, 100%, 69%);
+}
+
+.button-download{
+    margin-bottom: 80px;
+}
+
+.button-download button {
+    transition: transform 0.3s ease;
+}
+
+.button-download button:hover,
+.button-download button:focus {
+    transform: scale(0.90);
+}
+
+.footer-icon svg {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* .footer-icon:hover svg path,
+.footer-icon:hover svg path {
+    transform: scale(1); 
+     fill: aquamarine;
+} */
+
+.ios-button a,
+.mac-button a{
+    color: white;
+}
+
+
+
+@media screen and (max-width:524px){
+    .background-image {
+        background-image: url('./images/bg-header-mobile.png');
+        background-size: cover; 
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .quick-search{
+        margin-bottom: 50px;
+    }
+    .computer-feature{
+        width: 100%;
+        max-width: 100%;   
+    }
+    .company-logos{
+        flex-direction: column;
+    }
+    .computer-image{
+        transform: translateX(0px);
+    }
+    .snippets{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .history{
+        width: 90%; 
+    }
+    .access-clipboard{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .attribution{
+        font-size: 15px;
+    }
+    .Supercharge{
+        width: 80%;
+    }
+    .workflow{
+        flex-direction: column;
+    }
+    .clipboard{
+        width: 80%;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .foot-content, h6{
+        margin-bottom: 25px;
+    }
+    .google,.IBM,.microsoft,.hp,.vector{
+        display: flex;
+        justify-content: center;
+        margin-block: 30px;
+    }
+    .ios-button,.mac-button{
+        width: 90%;
+    }
+    .footer .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-logo{
+        margin-block: 50px;
+        width: 25%;
+        height: 25%;
+        margin-inline: auto;
+    }
+    .footer-icon{
+        justify-content: center;
+    }
+}
